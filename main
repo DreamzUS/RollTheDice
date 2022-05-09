@@ -1,0 +1,38 @@
+import random
+import time
+
+dice = random.choice(range(1, 6))
+
+one = "⚀"
+two = "⚁"
+three = "⚂"
+four = "⚃"
+five = "⚄"
+six = "⚅"
+
+if dice == 1:
+    emoji = one
+elif dice == 2:
+    emoji = two
+elif dice == 3:
+    emoji = three
+elif dice == 4:
+    emoji = four
+elif dice == 5:
+    emoji = five
+elif dice == 6:
+    emoji == six
+
+print("Rolling the dice.. 🎲")
+time.sleep(2)
+print("Rolling... 🎲")
+time.sleep(2)
+print("Rolling.... 🎲")
+time.sleep(2)
+print("What's it gonna be?")
+
+time.sleep(3)
+
+print(' ')
+print('It landed on {0}'.format(str(dice)) + "! " + emoji)
+
